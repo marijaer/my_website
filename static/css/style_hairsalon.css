@@ -1,0 +1,18 @@
+* {                                 /*Jel bootstrap po defaultu koristi border-box?*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.col-md-auto {
+    padding: 0 0;/*Zašto unatoč ovome search input nije pozicioniran jednako udaljeno od gornjeg desnog kuta?*/
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.container {                        /* zašto nije pozicionirano jedno pored drugog*/
+display: flex;
+justify-content: space-between;
+margin-top: 20px;
+}

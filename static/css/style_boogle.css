@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+.header-container {
+    color: #737373;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-menu {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 10px;
+}
+
+a:link.type1 {                          /*može li se spojit u jedan selector a:link.type1 i a:link.type3 da bude preglednije?*/
+    text-decoration: none;
+    color: inherit;
+    }
+
+a:link.type3 {
+    text-decoration: none;
+    }
+
+a:hover.type1 {                          /*može li se spojit u jedan selector a:hover.type1 i a:hover.type3 da bude preglednije?*/
+    text-decoration: underline;
+    }
+
+a:hover.type3 {
+    text-decoration: underline;
+    }
+
+.type3 {
+    background-color: #4386FB;
+    color: white;
+    border-radius: 5%;
+    padding: 10px 10px;
+}
+
+#svgapps {                              /*kako napraviti da na hover promijeni boju svg? mislim da nisam dobro u HTML-u definirala SVG jer sam ga unijela kroz img tag al ne znam drukčije + može li se svg formatu minjeat boja?*/
+    vertical-align: top;
+}
+
+.page-container {
+    height: 580px;          /*ako stavim 100% sve zbije skupa, zašto?, odnosno kako postaviti da page zauzme cijelu visinu ekrana*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page {
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+ }
+
+.input {                                        /*kako u input dodati svg? Sada je izvan*/
+    width: 400px;
+    display: flex;
+    justify-content: space between;
+}
+
+.type {                                         /*kako povećati .type?*/
+    border-radius: 10px;
+    border: 1px solid grey;
+    flex: 2;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    width: 400px;                               /*ako želim da kopira širinu elementa od svog parenta, kako to napraviti bez da unosim fiksni iznos?*/
+    padding: 10px 10px;
+}
+
+.search1,
+.search2 {
+    background-color: #F3F3F3;
+    padding: 10px 10px;
+    border-radius: 5%;
+    margin-left: 10px;
+}
+
+a:link.search1 {
+    text-decoration: none;
+    color: inherit;
+    }
+
+a:link.search2 {
+    text-decoration: none;
+    color: inherit;
+    }
+
+a:hover.search1 {
+    border: 1px solid grey;
+    }
+
+a:hover.search2 {
+    border: 1px solid grey;
+    }
+
+.footer1-container {
+    color: #969EB1;
+    background-color: #f2f2f2;
+    border-top: 1px solid grey;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 10px;
+}
+
+.footer2-container {
+    color: #969EB1;
+    background-color: #f2f2f2;
+    border-top: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.footer2-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.footer2-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.footer1-container>a:link {
+    text-decoration: none;
+    color: inherit;
+    }
+
+.footer2-1>a:link {
+    text-decoration: none;
+    color: inherit;
+    }
+
+.footer2-2>a:link {
+    text-decoration: none;
+    color: inherit;
+    }
+
+.footer2-1>a:hover {
+    text-decoration: underline;
+}
+
+.footer2-2>a:hover {
+    text-decoration: underline;
+}
+
+
